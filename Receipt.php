@@ -8,7 +8,7 @@ requireLogin();
 
 // Check if booking ID exists in session
 if (!isset($_SESSION['booking_id'])) {
-    header("Location: myBookings.php");
+    header("Location: MyBookings.php");
     exit();
 }
 
@@ -30,7 +30,7 @@ $booking_query = "SELECT b.*, t.TravelDate, t.DepartureTime, t.Price,
 $booking_result = mysqli_query($conn, $booking_query);
 
 if (mysqli_num_rows($booking_result) == 0) {
-    header("Location: myBookings.php");
+    header("Location: MyBookings.php");
     exit();
 }
 
@@ -67,12 +67,12 @@ unset($_SESSION['booking_id']);
         <nav>
             <img src="JomBus.png" width="80px" height="80px">
             <div class="nav-links">
-                <a href="home.php">Home</a>
-                <a href="myBookings.php">My Bookings</a>
-                <a href="bookings.php">Bookings</a>
+                <a href="Home.php">Home</a>
+                <a href="MyBookings.php">My Bookings</a>
+                <a href="Bookings.php">Bookings</a>
             </div>
             <div class="nav-right">
-                <a id="P1" href="profile.php">
+                <a id="P1" href="Profile.php">
                     <img src="user.png" width="40px" height="40px" alt="Profile">
                 </a>
             </div>
@@ -110,7 +110,7 @@ unset($_SESSION['booking_id']);
             <div class="receipt-footer">
                 <p>Thank you for choosing JomBus for your journey!</p>
                 <p>For any inquiries, please contact our customer service.</p>
-                <a href="myBookings.php"><button>View My Bookings</button></a>
+                <a href="MyBookings.php"><button>View My Bookings</button></a>
             </div>
         </section>
     </main>

@@ -26,7 +26,7 @@ $trip_query = "SELECT t.*, r.Duration,
 $trip_result = mysqli_query($conn, $trip_query);
 
 if (mysqli_num_rows($trip_result) == 0) {
-    header("Location: bookings.php");
+    header("Location: Bookings.php");
     exit();
 }
 
@@ -68,12 +68,12 @@ $_SESSION['selected_trip'] = [
         <nav>
             <img src="JomBus.png" width="80px" height="80px">
             <div class="nav-links">
-                <a href="home.php">Home</a>
-                <a href="myBookings.php">My Bookings</a>
-                <a href="bookings.php">Bookings</a>
+                <a href="Home.php">Home</a>
+                <a href="MyBookings.php">My Bookings</a>
+                <a href="Bookings.php">Bookings</a>
             </div>
             <div class="nav-right">
-                <a id="P1" href="profile.php">
+                <a id="P1" href="Profile.php">
                     <img src="user.png" width="40px" height="40px" alt="Profile">
                 </a>
             </div>

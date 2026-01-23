@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if (mysqli_num_rows($trip_result) == 0) {
         $_SESSION['error'] = "Invalid trip selected.";
-        header("Location: bookings.php");
+        header("Location: Bookings.php");
         exit();
     }
     
@@ -43,11 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
     
     // Redirect to checkout
-    header("Location: checkout.php");
+    header("Location: Checkout.php");
     exit();
 } else {
     // If accessed directly without form submission, redirect to bookings page
-    header("Location: bookings.php");
+    header("Location: Bookings.php");
     exit();
 }
 ?>

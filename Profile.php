@@ -76,9 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav>
             <img src="JomBus.png" width="80px" height="80px">
             <div class="nav-links">
-                <a href="home.php">Home</a>
-                <a href="myBookings.php">My Bookings</a>
-                <a href="bookings.php">Bookings</a>
+                <a href="Home.php">Home</a>
+                <a href="MyBookings.php">My Bookings</a>
+                <a href="Bookings.php">Bookings</a>
             </div>
             <div class="nav-right">
                 <a id="P1" href="Profile.php">

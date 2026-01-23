@@ -8,7 +8,7 @@ requireLogin();
 
 // Check if booking information exists in session
 if (!isset($_SESSION['booking']) || !isset($_SESSION['selected_trip'])) {
-    header("Location: bookings.php");
+    header("Location: Bookings.php");
     exit();
 }
 
@@ -84,19 +84,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         unset($_SESSION['booking']);
         
         // Redirect to receipt page
-        header("Location: receipt.php");
+        header("Location: Receipt.php");
         exit();
     } catch (Exception $e) {
         // Rollback transaction on error
         mysqli_rollback($conn);
         
         $_SESSION['error'] = $e->getMessage();
-        header("Location: checkout.php");
+        header("Location: Checkout.php");
         exit();
     }
 } else {
     // If accessed directly without form submission, redirect to bookings page
-    header("Location: bookings.php");
+    header("Location: Bookings.php");
     exit();
 }
 ?>
