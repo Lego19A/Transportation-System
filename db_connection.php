@@ -1,8 +1,8 @@
 <?php
 // Database connection parameters
-$servername = "jombusmysql.cdkkthw5xyg7.us-east-1.rds.amazonaws.com";
-$username = "admin";  // default XAMPP username
-$password = "Fan123987";      // default XAMPP password
+$servername = "localhost";
+$username = "user";  // default XAMPP username
+$password = "password123";      // default XAMPP password
 $dbname = "jom_bus";
 
 // Create connection
