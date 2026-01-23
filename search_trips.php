@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate input - Check if departure and destination are the same
     if ($departure_id == $destination_id) {
         $_SESSION['error'] = "Departure and destination cannot be the same.";
-        header("Location: Bookings.php");
+        header("Location: bookings.php");
         exit();
     }
     
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $today = date('Y-m-d');
     if ($travel_date < $today) {
         $_SESSION['error'] = "Please select a future date for travel.";
-        header("Location: Bookings.php");
+        header("Location: bookings.php");
         exit();
     }
     
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if (mysqli_num_rows($route_result) == 0) {
         $_SESSION['error'] = "No routes found for this selection.";
-        header("Location: Bookings.php");
+        header("Location: bookings.php");
         exit();
     }
     
@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if we have any valid trips after filtering
     if (empty($search_results)) {
         $_SESSION['error'] = "No trips available for the selected date and time. Please select a different date or check back later.";
-        header("Location: Bookings.php");
+        header("Location: bookings.php");
         exit();
     }
     
@@ -105,11 +105,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['search_results'] = $search_results;
     
     // Redirect back to bookings page to display results
-    header("Location: Bookings.php");
+    header("Location: bookings.php");
     exit();
 } else {
     // If accessed directly without form submission, redirect to bookings page
-    header("Location: Bookings.php");
+    header("Location: bookings.php");
     exit();
 }
 ?>

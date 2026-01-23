@@ -36,12 +36,12 @@ $bookings_result = mysqli_query($conn, $bookings_query);
         <nav>
             <img src="JomBus.png" width="80px" height="80px">
             <div class="nav-links">
-                <a href="Home.php">Home</a>
-                <a href="MyBookings.php">My Bookings</a>
-                <a href="Bookings.php">Bookings</a>
+                <a href="home.php">Home</a>
+                <a href="myBookings.php">My Bookings</a>
+                <a href="bookings.php">Bookings</a>
             </div>
             <div class="nav-right">
-                <a id="P1" href="Profile.php">
+                <a id="P1" href="profile.php">
                     <img src="user.png" width="40px" height="40px" alt="Profile">
                 </a>
             </div>
@@ -103,7 +103,7 @@ $bookings_result = mysqli_query($conn, $bookings_query);
                 <div class="no-bookings">
                     <h2>No bookings found</h2>
                     <p>You haven't made any bookings yet.</p>
-                    <a href="Bookings.php"><button>Book a Trip</button></a>
+                    <a href="bookings.php"><button>Book a Trip</button></a>
                 </div>
             <?php endif; ?>
         </div>

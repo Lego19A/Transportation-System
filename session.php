@@ -10,7 +10,7 @@ function isLoggedIn() {
 // Function to redirect if not logged in
 function requireLogin() {
     if (!isLoggedIn()) {
-        header("Location: Log_in.php");
+        header("Location: log_in.php");
         exit();
     }
 }

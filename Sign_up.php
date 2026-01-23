@@ -5,7 +5,7 @@ include 'db_connection.php';
 
 // Check if user is already logged in
 if (isLoggedIn()) {
-    header("Location: Home.php");
+    header("Location: home.php");
     exit();
 }
 
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
 
     <button type="submit" value="Sign-up"> Sign-up </button>
-    <p>Already have an account? <a href="Log_in.php">Login</a></p>
+    <p>Already have an account? <a href="log_in.php">Login</a></p>
     </div>
 
     </form>

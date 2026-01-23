@@ -5,7 +5,7 @@ include 'db_connection.php';
 
 // Check if user is already logged in
 if (isLoggedIn()) {
-    header("Location: Home.php");
+    header("Location: home.php");
     exit();
 }
 
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $user['Username'];
             
             // Redirect to home page
-            header("Location: Home.php");
+            header("Location: home.php");
             exit();
         } else {
             $error = "Invalid password";

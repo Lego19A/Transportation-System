@@ -8,7 +8,7 @@ requireLogin();
 
 // Check if booking ID is provided
 if (!isset($_GET['id']) || empty($_GET['id'])) {
-    header("Location: MyBookings.php");
+    header("Location: myBookings.php");
     exit();
 }
 
@@ -32,7 +32,7 @@ $booking_result = mysqli_query($conn, $booking_query);
 
 if (mysqli_num_rows($booking_result) == 0) {
     // Either booking doesn't exist or doesn't belong to this user
-    header("Location: MyBookings.php");
+    header("Location: myBookings.php");
     exit();
 }
 
@@ -66,12 +66,12 @@ $booking_reference = "JB" . str_pad($booking_id, 6, "0", STR_PAD_LEFT);
         <nav>
             <img src="JomBus.png" width="80px" height="80px">
             <div class="nav-links">
-                <a href="Home.php">Home</a>
-                <a href="MyBookings.php">My Bookings</a>
-                <a href="Bookings.php">Bookings</a>
+                <a href="home.php">Home</a>
+                <a href="myBookings.php">My Bookings</a>
+                <a href="bookings.php">Bookings</a>
             </div>
             <div class="nav-right">
-                <a id="P1" href="Profile.php">
+                <a id="P1" href="profile.php">
                     <img src="user.png" width="40px" height="40px" alt="Profile">
                 </a>
             </div>
@@ -118,7 +118,7 @@ $booking_reference = "JB" . str_pad($booking_id, 6, "0", STR_PAD_LEFT);
                 </div>
                 
                 <div class="actions">
-                    <a href="MyBookings.php" class="btn">Back to My Bookings</a>
+                    <a href="myBookings.php" class="btn">Back to My Bookings</a>
                 </div>
             </div>
         </div>

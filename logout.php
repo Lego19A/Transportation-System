@@ -8,6 +8,6 @@ session_unset();
 session_destroy();
 
 // Redirect to home page
-header("Location: Home.php");
+header("Location: home.php");
 exit();
 ?>
