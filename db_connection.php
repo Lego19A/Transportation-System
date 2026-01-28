@@ -1,8 +1,8 @@
 <?php
 // Database connection parameters
-$servername = "jombusmysql.cdkkthw5xyg7.us-east-1.rds.amazonaws.com";
-$username = "admin";  
-$password = "jom123bus";      
+$servername = "localhost";
+$username = "user";  
+$password = "password123";      
 $dbname = "jom_bus";
 
 // Create connection
