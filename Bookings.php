@@ -108,7 +108,7 @@ $today = date('Y-m-d');
     </main>
 
     <footer>
-         <h3 class="footer-style">Contact Us: <br> Anas Ahmed | 01164081225 <br> Elbaraa Taher | 01139941541 <br> Abdelrahman Amr | 0175351418  <br> Hasinou Said | 01139864462 </h3>
+         <h3 class="footer-style">Contact Us: <br> Anas Ahmed | 01164081225 <br> Elbaraa Taher | 01139941541 <br> Hassan Amer | 01111781601  <br> Wadia Suhaib | 0195570086 </h3>
   <p class="footer-style">&copy;2025 JomBus Travel Sdn Bhd. All rights reserved</p> 
     </footer>
 
