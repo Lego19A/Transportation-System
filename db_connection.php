@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$servername = "local";
+$servername = "localhost";
 $username = "user";  
 $password = "password123";      
 $dbname = "jom_bus";
